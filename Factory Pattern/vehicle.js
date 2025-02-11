@@ -23,7 +23,10 @@ class VehicleFactory {
       case "bike":
         return new Bike();
       default:
-        return Vehicle();
+        return new Vehicle();
     }
   }
 }
+
+let car = VehicleFactory.createVehicle("car");
+console.log(car.getType());
