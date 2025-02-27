@@ -1,9 +1,9 @@
-function hashStringToInt(s, tableSize){
-    let hash = 17;
-    for(let i=0; i<s.length; i++){
-        hash = (13 * hash * s.charCodeAt(i)) % tableSize;
-    }
-    return hash;
+function hashStringToInt(s, tableSize) {
+  let hash = 17;
+  for (let i = 0; i < s.length; i++) {
+    hash = (13 * hash * s.charCodeAt(i)) % tableSize;
+  }
+  return hash;
 }
 
 class HashTable {
